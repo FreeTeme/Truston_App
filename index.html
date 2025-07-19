@@ -350,7 +350,7 @@ if ('serviceWorker' in navigator &&
     (location.protocol === 'https:' || location.hostname.includes('localhost'))) {
   
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('sw.js')
+    navigator.serviceWorker.register('/sw.js')
       .then(function(registration) {
         console.log('ServiceWorker зарегистрирован:', registration.scope);
         
